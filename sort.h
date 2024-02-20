@@ -24,6 +24,14 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void shell_sort(int *array, size_t size); /* Add this line */
+void shell_sort(int *array, size_t size);
+
+/**
+ * shell_sort - Sorts an array of integers in ascending order using the Shell
+ * sort algorithm with the Knuth sequence.
+ * @array: The array to be sorted.
+ * @size: The size of the array.
+ */
+void shell_sort(int *array, size_t size);
 
 #endif /* SORT_H */
