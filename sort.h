@@ -9,7 +9,6 @@
  * @n: Integer stored in the node
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
- *
  * Description: Doubly linked list node structure
  * for the Holberton project. This structure is used for storing
  * integers and pointers to the previous and next elements in the list.
@@ -28,5 +27,6 @@ void print_list(const listint_t *list);
 /* Sorting algorithms prototypes */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
 
 #endif /* SORT_H */
