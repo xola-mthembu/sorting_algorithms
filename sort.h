@@ -9,17 +9,15 @@
  * @n: Integer stored in the node
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
- * Description: Doubly linked list node structure
- * for Holberton project
+ * Description: Doubly linked list node structure for project
  */
 typedef struct listint_s
 {
-	const int n;
+	int n;
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
 
-/* Function prototypes */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
