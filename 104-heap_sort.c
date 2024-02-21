@@ -31,7 +31,10 @@ void sift_down(int *array, size_t start, size_t end, size_t size)
 			swap = child;
 		if (child + 1 <= end && array[swap] < array[child + 1])
 			swap = child + 1;
-		if (swap != root)
+		if (swap == root)
+		{
+			return;
+		} else
 		{
 			swap_ints(&array[root], &array[swap]);
 			print_array(array, size);
